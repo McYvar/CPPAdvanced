@@ -43,7 +43,7 @@ string Bankaccount::ShowTransactions() const
     if (history.empty()) result += "No transactions in account\n";
     else
     {
-        for (auto i = history.begin(); i != history.end(); ++i)
+        for (auto i = history.begin(); i != history.end(); i++)
         {
             result += i->ToString() + "\n";
         }
