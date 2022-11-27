@@ -3,7 +3,6 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
-#include <numeric>
 
 int main() {
     // gebruik functies uit <algorithm> en <functional> om (steeds vanuit een ORIGINELE copie van deze vector)
