@@ -1,0 +1,18 @@
+﻿  Main.cpp
+D:\HKU\Jaar2\CPPAdvanced\Templates\Templates\QueueTemplate.cpp(22,1): error C2440: 'return': cannot convert from 'void' to 'T'
+          with
+          [
+              T=int
+          ]
+D:\HKU\Jaar2\CPPAdvanced\Templates\Templates\QueueTemplate.cpp(22,21): message : Expressions of type void cannot be converted to other types
+D:\HKU\Jaar2\CPPAdvanced\Templates\Templates\QueueTemplate.cpp(21): message : while compiling class template member function 'T QueueTemplate<T>::Get(void)'
+          with
+          [
+              T=int
+          ]
+D:\HKU\Jaar2\CPPAdvanced\Templates\Templates\Main.cpp(11): message : see reference to function template instantiation 'T QueueTemplate<T>::Get(void)' being compiled
+          with
+          [
+              T=int
+          ]
+D:\HKU\Jaar2\CPPAdvanced\Templates\Templates\Main.cpp(7): message : see reference to class template instantiation 'QueueTemplate<int>' being compiled
