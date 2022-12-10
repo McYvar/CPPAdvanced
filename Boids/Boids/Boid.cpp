@@ -1,23 +1,23 @@
 #include "Boid.h"
-#include <stdlib.h>
+#include "Time.h"
 
-Boid::Boid(const sf::RenderWindow &window)
+Boid::Boid()
 {
-	this->x = window.getSize().x / 2.0f;
-	this->y = window.getSize().y / 2.0f;
-	shape.setPosition(x, y);
-	shape.setRadius(10);
+	window = nullptr;
+	position = sf::Vector2f(0, 0);
 }
 
-void Boid::DrawBoid(sf::RenderWindow &window)
+Boid::Boid(sf::RenderWindow *window)
 {
-	shape.setPosition(x, y);
-	window.draw(shape);
+	this->window = window;
+	position = sf::Vector2f(window->getSize().x / 2.0f, window->getSize().y / 2.0f);
+	this->shape.setPosition(position);
+	this->shape.setRadius(3);
 }
 
-void Boid::NewPos(float x, float y)
+void Boid::DrawBoid()
 {
-	this->x = x;
-	this->y = y;
+	shape.setPosition(position);
+	window->draw(shape);
 }
 
