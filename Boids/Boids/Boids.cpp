@@ -6,13 +6,11 @@ int main(int argc, char* argv[])
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
-    sf::RectangleShape rect(sf::Vector2f(100, 100));
-
-    Boid b(300, 300, 200, 200);
+    Boid b(window);
 
     while (window.isOpen())
     {
-        sf::Event event;
+        sf::Event event{};
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
@@ -20,7 +18,6 @@ int main(int argc, char* argv[])
         }
 
         window.clear();
-        //window.draw();
         b.DrawBoid(window);
         window.display();
     }

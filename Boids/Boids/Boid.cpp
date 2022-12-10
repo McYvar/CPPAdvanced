@@ -1,16 +1,23 @@
 #include "Boid.h"
+#include <stdlib.h>
 
-Boid::Boid(int x, int y, int dx, int dy)
+Boid::Boid(const sf::RenderWindow &window)
 {
-	this->x = x;
-	this->y = y;
-	this->dx = dx;
-	this->dy = dy;
-	rect.setPosition(x, y);
-	rect.setSize(sf::Vector2f(dx, dy));
+	this->x = window.getSize().x / 2.0f;
+	this->y = window.getSize().y / 2.0f;
+	shape.setPosition(x, y);
+	shape.setRadius(10);
 }
 
 void Boid::DrawBoid(sf::RenderWindow &window)
 {
-	window.draw(rect);
+	shape.setPosition(x, y);
+	window.draw(shape);
 }
+
+void Boid::NewPos(float x, float y)
+{
+	this->x = x;
+	this->y = y;
+}
+

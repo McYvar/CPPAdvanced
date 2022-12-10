@@ -5,18 +5,17 @@
 class Boid
 {
 public:
-	Boid(int x, int y, int dx, int dy);
+	Boid(const sf::RenderWindow &window);
 
 	void DrawBoid(sf::RenderWindow &window);
 
+	void NewPos(float x, float y);
+
 private:
-	int x;
-	int y;
+	float x;
+	float y;
 
-	int dx;
-	int dy;
-
-	sf::RectangleShape rect;
+	sf::CircleShape shape;
 	
 };
 
