@@ -1,0 +1,3 @@
+D:/HKU/Jaar2/CPPAdvanced/Opdracht-ProducerConsumer_startpunt/out/build/x64-Debug/CMakeFiles/Opdracht-ProducerConsumer.dir
+D:/HKU/Jaar2/CPPAdvanced/Opdracht-ProducerConsumer_startpunt/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/HKU/Jaar2/CPPAdvanced/Opdracht-ProducerConsumer_startpunt/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
